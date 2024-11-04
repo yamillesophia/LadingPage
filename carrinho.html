@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="estilocarrinho.css">
+    <link rel="shortcut icon" href="Logotipo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Carrinho de Compras</h1>
+    </header>
+    <main>
+        <section class="cart">
+            <h2>Itens no Carrinho</h2>
+            <ul id="cart-items">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </ul>
+            <div class="total" id="total">
+                <strong>Total: R$ 0,00</strong>
+            </div>
+            <button class="checkout-button">Finalizar Compra</button>
+        </section>
+        <section class="menu">
+            <h2>Menu</h2>
+            <button onclick="addItem('Hambúrguer', 19.90)">Adicionar Hambúrguer - R$ 19,90</button>
+            <button onclick="addItem('Fritas', 12.50)">Adicionar Fritas - R$ 12,50</button>
+            <button onclick="addItem('Refrigerante', 5)">Adicionar Refrigerante - R$ 5,00</button>
+        </section>
+    </main>
+    <script src="scriptcarrinho.js"></script>
+</body>
+</html>
